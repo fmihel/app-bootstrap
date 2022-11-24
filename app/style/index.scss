@@ -1,7 +1,7 @@
 @use "sass:map";
 @import './vars.scss';
-@import './panel.scss';
-@import './lazy.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 *{
     box-sizing: border-box;
 }
@@ -46,8 +46,6 @@ body{
                 background-color: $bg;
                 color:$color;
                 
-                @include panel($theme,$border);
-                @include lazy($theme,$border,$color);
             }
         }
 

@@ -6,8 +6,7 @@
   "scripts": {
     "build-prod": "rm -rf ./dist/* &&  webpack --env --prod",
     "build-dev": "rm -rf ./dist/* &&  webpack",
-    "run-dev-server": "webpack-dev-server",
-    "generate-action": "node snippets/action"
+    "run-dev-server": "webpack-dev-server"    
   },
   "author": "",
   "license": "MIT",
@@ -39,6 +38,8 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
     "fmihel-lazy-load": "^0.0.6",
     "fmihel-redux-wrapper": "^3.0.1",
     "jquery": "^3.6.1",

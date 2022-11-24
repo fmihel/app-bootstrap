@@ -28,6 +28,7 @@ let hash = genHash(20);
 
 const copyList = [
     { from: `./app/media/favicon.ico` },
+    { from: `./app/media/`,to:outputPath+'/media/' },
 ];
 
 
