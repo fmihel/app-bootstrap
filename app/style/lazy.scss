@@ -1,0 +1,10 @@
+@mixin lazy($theme,$border,$color) {
+    .lazy{
+        height:$size;
+        line-height: $size;
+        border: 1px solid $border;
+        text-align:center;
+        margin:$gap;
+    }
+}
+
