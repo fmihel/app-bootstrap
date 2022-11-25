@@ -1,9 +1,15 @@
 @use "sass:map";
 @import './vars.scss';
+@import './redefine.bootstrap.scss';
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import './ctrls.scss';
 
-*{
+*, *::before, *::after {
     box-sizing: border-box;
+}
+
+html{
+    font-size: $fontSize;
 }
 
 body{
@@ -16,6 +22,14 @@ body{
     padding:0px;
     overflow:hidden;
     font-family: roboto,"Noto Sans Myanmar UI",arial,sans-serif ;
+    
+
+
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
 
     #root{
         overflow: hidden;
@@ -51,5 +65,9 @@ body{
 
     }
     
+}
+
+.row{
+    margin-bottom: $gap;
 }
 

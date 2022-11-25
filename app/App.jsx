@@ -66,14 +66,28 @@ class App extends React.Component {
             <>
                 <div className={`app ${theme}`}>
                     <Suspense fallback={<Fallback/>}>
-                        <Navbar src="./media/logo.png" menu={menu} addClass={theme === 'dark' ? 'navbar-dark bg-dark' : 'navbar-dark bg-dark text-bg-dark'}/>
+                        <Navbar src="./media/logo.png" menu={menu} addClass={theme === 'dark' ? 'navbar-dark bg-primary' : 'navbar-dark bg-dark text-bg-dark'}/>
                     </Suspense>
                     <div className="container-lg">
                         <div className="row">
                             <div className="col">
-                            app-bootsrap
+                                <label>
+                                    <span>label</span>
+                                    <input type='text' placeholder="edit" className="form-control"/>
+                                </label>
+                                <button className="btn  btn-secondary">press...</button>
+                                <input className="btn btn-secondary"type='button' value="press..." />
                             </div>
                         </div>
+                        <div className="row">
+                            <div className="col">
+                                <div className="input-group mb-3">
+                                    <span className="input-group-text" id="basic-addon1">email</span>
+                                    <input type="text" className="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 {(Modal)
@@ -81,8 +95,8 @@ class App extends React.Component {
                     id='my-dialog'
                     caption = 'message'
                     buttons={ {
-                        cancel: { caption: 'отмена', addClass: 'btn-secondary' },
-                        ok: { caption: 'ok' },
+                        cancel: { caption: 'отмена' },
+                        ok: { caption: 'ok', addClass: 'btn-primary' },
                     }}
                 >Hello!</Modal>
                 }

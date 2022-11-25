@@ -10,7 +10,7 @@ export default ({
     const text = 'Navbar';
 
     return (
-        <nav className={`navbar navbar-expand-lg ${addClass}  sticky-top`} id="navbar" >
+        <nav className={`navbar navbar-expand-lg ${addClass} mb-1`} id="navbar" >
             <div className="container-fluid">
                 <img
                     src={src}
