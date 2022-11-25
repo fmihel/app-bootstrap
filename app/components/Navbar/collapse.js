@@ -5,7 +5,6 @@ function collapse(param = {}) {
         ...collapse.global,
         ...param,
     };
-    console.log('collpase', p.need(), window.innerWidth);
     if (p.need === true || (typeof p.need === 'function' && p.need())) { // only for large container :(
         const dom = document.getElementById(p.id);
         const def = new bootstrap.Collapse(dom, { toggle: true });
