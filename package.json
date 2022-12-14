@@ -6,7 +6,7 @@
   "scripts": {
     "build-prod": "rm -rf ./dist/* &&  webpack --env --prod",
     "build-dev": "rm -rf ./dist/* &&  webpack",
-    "run-dev-server": "webpack-dev-server"    
+    "run-dev-server": "webpack-dev-server"
   },
   "author": "",
   "license": "MIT",
@@ -48,7 +48,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.4",
     "react-router-dom": "^6.4.1",
-    "readux": "^1.0.0",
+    "redux": "^4.2.0",
     "redux-thunk": "^2.4.1"
   }
 }
